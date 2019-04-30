@@ -16,7 +16,7 @@ RUNDECK_APP_DIR=${BUILD_DIR}/rundeck
 source ${BIN_DIR}/../vars.sh
 
 echo "-----> Installing java"
-wget --no-check-certificate --no-cookies \
+wget --no-check-certificate --no-cookies -c \
         --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" \
         ${JRE_URL} -O ${BIN_DIR}/jre.zip
 
