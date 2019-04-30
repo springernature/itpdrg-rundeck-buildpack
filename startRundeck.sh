@@ -10,7 +10,7 @@ export PATH=$PATH:${BASE_PATH}/.java/bin
 
 echo "-----> Starting Rundeck"
 
-ADDITIONAL_ARGS="-Dserver.http.port=${PORT}"
+ADDITIONAL_ARGS="-Dserver.http.port=${PORT} -Xmx1g"
 
 ADDITIONAL_ARGS="${ADDITIONAL_ARGS} -Drundeck.log4j.config.file=$RDECK_BASE/server/config/log4j.properties -Drundeck.jaaslogin=true -Dloginmodule.conf.name=jaas-login.conf -Dloginmodule.name=RDpropertyfilelogin"
 
