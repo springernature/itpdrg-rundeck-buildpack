@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -e
+set -o xtrace
 
 # Absolute path
 BIN_DIR=$(cd $(dirname $0) && pwd)
