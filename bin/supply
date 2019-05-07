@@ -25,6 +25,9 @@ mkdir ${BUILD_DIR}/.java
 # -C is the directory, strip-components removes the top-level folder (jre_1.8.....)
 tar zxf ${BIN_DIR}/jre.zip -C ${BUILD_DIR}/.java --strip-components 1
 
+# overwrite corrupt(?) cacerts with valid one from ${BIN_DIR}/../resources/cacerts
+cp ${BIN_DIR}/../resources/cacerts ${BUILD_DIR}/.java/jre/lib/security/cacerts
+
 sleep 2
 
 ##################################################################################
